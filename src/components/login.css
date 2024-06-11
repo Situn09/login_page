@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.outer-box {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, #3ed8ff, #a8f5ff);
+}
+.inner-box {
+  z-index: 1;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #ffffff09;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 2px 2px 50px #070707;
+}
+.login-header h1 {
+  font-size: 2.5rem;
+  color: #212121;
+}
+.login-body {
+  margin: 20px 0;
+}
+.login-body div {
+  margin: 10px 0;
+}
+.login-body div label {
+  display: block;
+  font-weight: 700;
+}
+.login-body div input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #cccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+.user-type {
+  display: flex;
+  gap: 10px;
+}
+.user-type input {
+  width: fit-content;
+}
+.login-body div input[type="submit"] {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.login-body div input[type="submit"]:hover {
+  background-color: #0b4d79b9;
+}
+.login-footer {
+  color: #555;
+  text-align: center;
+}
+.login-footer a {
+  color: #3498db;
+}
+.c1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, #3498db, #ffffffaa);
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20px;
+}
+.c2 {
+  background: linear-gradient(to top left, #3498db, #ffffffaa);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 20px;
+}
+
+/* Dark Theme */
+body .dark {
+  font-family: "Lato", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark .outer-box {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, #2b2b2b, #1a1a1a);
+}
+.dark .inner-box {
+  z-index: 1;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 2px 2px 50px #000000;
+}
+.dark .login-header h1 {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+}
+.dark .login-body {
+  margin: 20px 0;
+}
+.dark .login-body div {
+  margin: 10px 0;
+}
+.dark .login-body div label {
+  display: block;
+  font-weight: 700;
+}
+.dark .login-body div input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 4px;
+  background-color: #333333;
+  color: #e0e0e0;
+}
+.dark .user-type {
+  display: flex;
+  gap: 10px;
+}
+.dark .user-type input {
+  width: fit-content;
+}
+.dark .login-body div input[type="submit"] {
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.dark .login-body div input[type="submit"]:hover {
+  background-color: #0059c1;
+}
+.dark .login-footer {
+  color: #bbbbbb;
+  text-align: center;
+}
+.dark .login-footer a {
+  color: #1a73e8;
+}
+.dark .c1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    to bottom right,
+    #1a73e8,
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20px;
+}
+.dark .c2 {
+  background: linear-gradient(to top left, #1a73e8, rgba(255, 255, 255, 0.1));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 20px;
+}
