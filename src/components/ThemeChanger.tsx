@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ThemeChanger = () => {
   const [darkTheme, setDarkTheme] = useState(false);
   const [headerColor, setHeaderColor] = useState("black");
   const changeTheme = () => {
     if (darkTheme) {
-      document.body.classList = "";
+      document.body.classList.value = "";
     } else {
-      document.body.classList = "dark";
+      document.body.classList.value = "dark";
     }
     setDarkTheme(!darkTheme);
   };

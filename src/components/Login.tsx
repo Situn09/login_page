@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 
@@ -36,8 +36,6 @@ const Login = () => {
     }
     if (userDB[user].password !== password) {
       console.log("user : ", password);
-      console.log(userDB[user].password);
-      console.log(!userDB[user].password !== password);
       alert("password is incorrect");
       return;
     }
